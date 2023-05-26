@@ -1,0 +1,76 @@
+.Otp{
+    background-image: url(../assets/loginbackground.svg);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.Otp__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.Otp__description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 4rem;
+}
+
+.Otp__description p{
+    text-align: center;
+}
+
+.Otp__input  {
+    padding: 5px 0px;
+}
+
+.Otp__inputs  {
+    margin: 0rem 2rem;
+}
+.Otp__inputs div div:focus{
+    border: 1px solid #70707C;
+
+}
+
+.Otp__input input:hover{
+    border: 0px solid #70707C;
+}
+.Otp__input input:focus{
+    border: 0px solid #70707C;
+    border-color: aqua;
+
+}
+
+.Otp__anchorbox {
+    display: flex;
+    justify-content: flex-end;
+    width: 93%;
+}
+
+.Otp__anchor {
+    display: flex;
+    width: fit-content;
+    justify-content: flex-end;
+    color:  #B71C1C;
+    text-decoration: none;
+}
+
+.Otp__input input {
+    background-color: #0f0f13;
+    border-radius: 8px;
+    height: 2rem;
+    width: 5rem;
+    color: white;
+}
+
+.Otp__input div:nth-child(4) {
+    padding-left: 1.5rem;
+
+}

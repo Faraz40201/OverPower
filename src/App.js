@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LoginScreen from "./Screens/LoginScreen";
+import OtpScreen from "./Screens/Otp";
+import User from "./Screens/User";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "@emotion/react";
+import { darkTheme } from "./helper/theme";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LoginScreen />,
+  },
+
+  {
+    path: "/otp",
+    element: <OtpScreen />,
+  },
+  {
+    path: "/user",
+    element: <User />,
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={darkTheme}>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </>
   );
 }
 
